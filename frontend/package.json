@@ -43,5 +43,9 @@
       "sharp",
       "workerd"
     ]
+  },
+  "overrides": {
+    "react": "$react",
+    "react-dom": "$react-dom"
   }
 }
