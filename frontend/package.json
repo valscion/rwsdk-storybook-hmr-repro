@@ -19,7 +19,9 @@
     "release": "rw-scripts ensure-deploy-env && npm run clean && npm run build && wrangler deploy",
     "generate": "rw-scripts ensure-env && wrangler types",
     "check": "npm run generate && npm run types",
-    "types": "tsc"
+    "types": "tsc",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "react": "19.3.0-canary-561ee24d-20251101",
@@ -28,14 +30,24 @@
     "rwsdk": "1.0.0-beta.24"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^4.1.2",
     "@cloudflare/vite-plugin": "1.13.18",
     "@cloudflare/workers-types": "4.20251014.0",
+    "@storybook/addon-a11y": "^10.0.3",
+    "@storybook/addon-docs": "^10.0.3",
+    "@storybook/addon-vitest": "^10.0.3",
+    "@storybook/react-vite": "^10.0.3",
     "@types/node": "~24.5.2",
     "@types/react": "19.1.2",
     "@types/react-dom": "19.1.2",
+    "storybook": "^10.0.3",
     "typescript": "5.8.3",
     "vite": "7.1.12",
-    "wrangler": "4.45.3"
+    "wrangler": "4.45.3",
+    "vitest": "^4.0.6",
+    "playwright": "^1.56.1",
+    "@vitest/browser-playwright": "^4.0.6",
+    "@vitest/coverage-v8": "^4.0.6"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
