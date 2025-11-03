@@ -2,6 +2,7 @@
 import { defineConfig } from "vite";
 import { redwood } from "rwsdk/vite";
 import { cloudflare } from "@cloudflare/vite-plugin";
+import tailwindcss from "@tailwindcss/vite";
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { storybookTest } from '@storybook/addon-vitest/vitest-plugin';
@@ -14,7 +15,7 @@ export default defineConfig({
     viteEnvironment: {
       name: "worker"
     }
-  }), redwood()],
+  }), redwood(), tailwindcss()],
   test: {
     projects: [{
       extends: true,
