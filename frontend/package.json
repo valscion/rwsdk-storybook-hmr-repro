@@ -24,10 +24,12 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.13",
     "react": "19.3.0-canary-561ee24d-20251101",
     "react-dom": "19.3.0-canary-561ee24d-20251101",
     "react-server-dom-webpack": "19.3.0-canary-561ee24d-20251101",
-    "rwsdk": "1.0.0-beta.24"
+    "rwsdk": "1.0.0-beta.24-test.20251103154619",
+    "tailwindcss": "^4.1.13"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.2",
@@ -40,14 +42,14 @@
     "@types/node": "~24.5.2",
     "@types/react": "19.1.2",
     "@types/react-dom": "19.1.2",
+    "@vitest/browser-playwright": "^4.0.6",
+    "@vitest/coverage-v8": "^4.0.6",
+    "playwright": "^1.56.1",
     "storybook": "^10.0.3",
     "typescript": "5.8.3",
     "vite": "7.1.12",
-    "wrangler": "4.45.3",
     "vitest": "^4.0.6",
-    "playwright": "^1.56.1",
-    "@vitest/browser-playwright": "^4.0.6",
-    "@vitest/coverage-v8": "^4.0.6"
+    "wrangler": "4.45.3"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
